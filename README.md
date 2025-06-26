@@ -13,3 +13,7 @@ Seu objetivo é oferecer **insights visuais rápidos** que ajudem o investidor a
 - 🔒 **Privacidade garantida:** os dados do investidor permanecem privados.
 - 🎯 **Escopo limitado:** a extensão é ativada apenas no domínio:
   - `https://www.investidor.b3.com.br/*`
+ 
+
+## 💡 Exemplo
+![image](https://github.com/user-attachments/assets/b1a0a99f-6438-482c-83e8-b7f42565e502)
