@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Pratics B3",
+  "version": "1.9",
+  "description": "Adiciona funcionalidades no site da B3",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.investidor.b3.com.br/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.investidor.b3.com.br/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
+
+
