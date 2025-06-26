@@ -7,7 +7,6 @@ const coletarTabelas = () => {
   chrome.storage.local.get(["resultadoConsolidado"], (result) => {
     if (result && typeof result.resultadoConsolidado !== "undefined") {
       const valor = result.resultadoConsolidado;
-      const sinal = valor >= 0 ? "+" : "-";
       const valorFormatado = `R$ ${Math.abs(valor).toLocaleString('pt-BR', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
@@ -94,7 +93,6 @@ const coletarTabelas = () => {
     });
   });
 
-  console.log("✅ Dados capturados:", resultados);
   console.log("✅ Dados capturados:", resultados);
 
   // Calcula a soma total dos resultados brutos
